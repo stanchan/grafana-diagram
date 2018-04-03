@@ -10,6 +10,9 @@
 .diagram div p {
   text-align: center; }
 
+.diagram div p.diagram-value {
+  margin-top: 0.9rem; }
+
 .diagram svg {
   margin: auto;
   display: block; }
