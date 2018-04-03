@@ -804,7 +804,7 @@ System.register(['./libs/mermaid/dist/mermaidAPI', 'app/core/time_series2', 'app
                   fo.attr('height', 45);
                   // Add value text
                   var p = div.append('p');
-                  p.classList.add("diagram-value");
+                  p.classed("diagram-value", true);
                   p.style('background-color', seriesItem.color);
                   p.html(seriesItem.valueFormatted);
                 } else {
@@ -828,7 +828,7 @@ System.register(['./libs/mermaid/dist/mermaidAPI', 'app/core/time_series2', 'app
                       var dElement = d3.select(targetElement[0]);
                       // Add value text
                       var p = dElement.append('p');
-                      p.classList.add("diagram-value");
+                      p.classed("diagram-value", true);
                       p.style('background-color', seriesItem.color);
                       p.html(seriesItem.valueFormatted);
                     }
