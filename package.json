@@ -1,6 +1,6 @@
 {
   "name": "grafana-diagram",
-  "version": "1.4.4",
+  "version": "2.0.0",
   "description": "A diagram panel plugin for Grafana",
   "main": "src/module.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jdbranham/grafana-diagram.git"
+    "url": "git+https://github.com/stanchan/grafana-diagram.git"
   },
   "keywords": [
     "plugin",
@@ -18,13 +18,14 @@
   ],
   "author": "Jeremy Branham <jeremy@savantly.net> (https://github.com/jdbranham)",
   "contributors": [
-    "Brian Gann (https://github.com/briangann)"
+    "Brian Gann (https://github.com/briangann)",
+    "Stan Chan <stanchan@users.noreply.github.com> (https://github.com/stanchan)"
   ],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/jdbranham/grafana-diagram/issues"
+    "url": "https://github.com/stanchan/grafana-diagram/issues"
   },
-  "homepage": "https://github.com/jdbranham/grafana-diagram#readme",
+  "homepage": "https://github.com/stanchan/grafana-diagram#readme",
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.26.3",
