@@ -17,11 +17,11 @@ module.exports = (grunt) => {
         dest: 'dist'
       },
       libs_to_dist: {
-		  cwd: 'node_modules',
-		  expand: true,
-		  src: ['mermaid/dist/mermaidAPI*'],
-		  dest: 'dist/libs'
-		},
+        cwd: 'node_modules',
+        expand: true,
+        src: ['mermaid/dist/mermaidAPI*', 'dagre/dist/dagre*', 'dagre-d3-renderer/dist/dagre*', 'graphlib/dist/*'],
+        dest: 'dist/libs'
+      },
       readme: {
         expand: true,
         src: ['README.md'],
@@ -42,7 +42,7 @@ module.exports = (grunt) => {
         options: {spawn: false}
       },
     },
-    
+
     sass: {
 		options: {
 			sourceMap: true

@@ -1,6 +1,8 @@
 /bower_components/
 /node_modules/
-/.project
+/data/
 /tmp/
-/grafana-diagram-1.4.0.tgz
+/grafana-diagram-*.tgz
+/.project
 package-lock.json
+/*.log

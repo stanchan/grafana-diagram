@@ -124,7 +124,7 @@ System.register(['./libs/mermaid/dist/mermaidAPI', 'app/core/time_series2', 'app
         mode: 'content', //allowed values: 'content' and 'url'
         mermaidServiceUrl: '',
         init: {
-          logLevel: 3, //1:debug, 2:info, 3:warn, 4:error, 5:fatal
+          logLevel: 1, //1:debug, 2:info, 3:warn, 4:error, 5:fatal
           cloneCssStyles: false, // - This options controls whether or not the css rules should be copied into the generated svg
           startOnLoad: false, // - This options controls whether or mermaid starts when the page loads
           arrowMarkerAbsolute: true, // - This options controls whether or arrow markers in html code will be absolute paths or an anchor, #. This matters if you are using base tag settings.
@@ -579,8 +579,8 @@ System.register(['./libs/mermaid/dist/mermaidAPI', 'app/core/time_series2', 'app
             var worstSeries = series1;
             var series1thresholdLevel = this.getThresholdLevel(series1);
             var series2thresholdLevel = this.getThresholdLevel(series2);
-            console.log("Series1 threshold level: " + series1thresholdLevel);
-            console.log("Series2 threshold level: " + series2thresholdLevel);
+            console.debug("Series1 threshold level: " + series1thresholdLevel);
+            console.debug("Series2 threshold level: " + series2thresholdLevel);
             if (series2thresholdLevel > series1thresholdLevel) {
               // series2 has higher threshold violation
               worstSeries = series2;
